@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment Contact List</title>
+    <link rel="stylesheet" href="./StyleSheet/style.css" />
+    <link
+      rel="stylesheet"
+      href="./bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/css/bootstrap.css"
+    />
+    <script src="./bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/js/bootstrap.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 offset-md-3">
+          <div class="contact-form">
+            <form id="contactForm">
+              <div class="form-group">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  placeholder="Name"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="phone"
+                  placeholder="Phone"
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="john@example.com"
+                  required
+                />
+              </div>
+              <button type="submit" class="btn btn-success btn-save">
+                Save
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <table class="table contact-table" id="contactsTable">
+        <thead class="thead-light">
+          <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>Phone</th>
+            <th>Email</th>
+            <th>Date</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <script src="./JavaScript/script.js"></script>
+  </body>
+</html>
